@@ -27,12 +27,12 @@ This research is an attempt to help film studios in deciding which movies to gre
 
 
 Other EDA was performed to see if ‘Budget’ is an obvious predictor of either Tomatometer Rating (ratings from the critics or Audience Rating (ratings from average viewers).  However, there appears to not be much correlation:
-![](images/Budget_vs_Tomatometer_rating.JPG)
-![](images/Budget_vs_Audience_rating.JPG)
+![](images/Budget_vs_Tomatometer_Rating.JPG)
+![](images/Budget_vs_Audience_Rating.JPG)
 
 
 As would probably be expected, a strong correlation between ‘Tomatometer Rating’ and ‘Audience Rating’ can be seen:
-![](images/Tomatometer_Rating_vs_Audience_rating.JPG)
+![](images/Tomatometer_Rating_vs_Audience_Rating.JPG)
 
 
 When deciding whether to green-light a project, film studios consider who the leading actor/actress of the movie is.  While the ‘Cast’ data was ultimately not used in the predictive models because of very high cardinality, it is still interesting to view a breakdown of the highest and lowest rated actors/actresses in the dataset:
