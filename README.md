@@ -19,4 +19,8 @@ This research is an attempt to help film studios in deciding which movies to gre
  This final dataset will be used to research the predictability of Tomatometer Scores (ranging from 0 to 100) and Tomatometer Statuses (Certified Fresh, Fresh, and Rotten) for movies before production has begun.  This will be attempted through both Natural Language Processing and Machine Learning regression models.
 
  ## EDA
+ The majority of the movies in the final dataset have a Rating of either ‘R’ or ‘PG-13’ and also fall into the Genre of ‘Action’, ‘Drama’, or ‘Comedy’.
  ![](images/Ratings_Genre.JPG)
+
+ Most of the movies in the final dataset were created recently.  Using more recent data like this should help with identifying up-to-date trends in the data.
+![](images/Release_Year.JPG)
