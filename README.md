@@ -19,4 +19,4 @@ This research is an attempt to help film studios in deciding which movies to gre
  This final dataset will be used to research the predictability of Tomatometer Scores (ranging from 0 to 100) and Tomatometer Statuses (Certified Fresh, Fresh, and Rotten) for movies before production has begun.  This will be attempted through both Natural Language Processing and Machine Learning regression models.
 
  ## EDA
- ![](images/Ratings_Genre.jpg)
+ ![](images/Ratings_Genre.JPG)
