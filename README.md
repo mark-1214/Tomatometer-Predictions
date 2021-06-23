@@ -8,6 +8,13 @@
      Predicting Tomatometer Scores with Movie Attributes
 </p>
 
+## Table of Contents
+* [Overview](#overview)
+* [Data](#data)
+* [EDA](#EDA)
+* [Methods](#methods)
+
+
  ## Overview
 This research is an attempt to help film studios in deciding which movies to green-light by using a tool that will predict the quality of a potential movie.  This tool will attempt to predict Tomatometer Rating and Tomatometer Status by using movie characteristics which would be known prior to a movie production starting.
 
@@ -53,3 +60,14 @@ When deciding whether to green-light a project, film studios consider who the le
   <img src="images/Top_10_highest.JPG" />
   <img src="images/Top_10_lowest.JPG" />
 </p>
+
+## Methods
+All methods can be seen in the [Predicting Tomatometer Scores] (Predicting_Tomatometer_Scores.ipynb) notebook
+
+Using both numerical and categorical columns in the dataset, predict Tomatometer Rating with Random Forest Regressor (RFR) model.
+
+Preprocessing data:
+
+One Hot Encoding applied to the categorical columns used in the model (Rating and Genre), which were selected based off their low cardinality.  MinMaxScaler was applied to the numerical columns (Runtime, Release Month, and Budget).
+
+
