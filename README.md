@@ -20,6 +20,7 @@ This research is an attempt to help film studios in deciding which movies to gre
 
  ## EDA
  The majority of the movies in the final dataset have a Rating of either ‘R’ or ‘PG-13’ and also fall into the Genre of ‘Action’, ‘Drama’, or ‘Comedy’.
+
  ![](images/Ratings_Genre.JPG)
 
  Most of the movies in the final dataset were created recently.  Using more recent data like this should help with identifying up-to-date trends in the data.
@@ -28,6 +29,7 @@ This research is an attempt to help film studios in deciding which movies to gre
 
 
 Other EDA was performed to see if ‘Budget’ is an obvious predictor of either Tomatometer Rating (ratings from the critics or Audience Rating (ratings from average viewers).  However, there appears to not be much correlation:
+
 ![](images/Budget_vs_Tomatometer_Rating.JPG)
 ![](images/Budget_vs_Audience_Rating.JPG)
 
@@ -38,6 +40,7 @@ As would probably be expected, a strong correlation between ‘Tomatometer Ratin
 
 
 When deciding whether to green-light a project, film studios consider who the leading actor/actress of the movie is.  While the ‘Cast’ data was ultimately not used in the predictive models because of very high cardinality, it is still interesting to view a breakdown of the highest and lowest rated actors/actresses in the dataset:
+
 ![](images/Top_10_highest.JPG)
 ![](images/Top_10_lowest.JPG)
 
