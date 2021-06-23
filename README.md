@@ -23,6 +23,7 @@ This research is an attempt to help film studios in deciding which movies to gre
  ![](images/Ratings_Genre.JPG)
 
  Most of the movies in the final dataset were created recently.  Using more recent data like this should help with identifying up-to-date trends in the data.
+
 ![](images/Release_Year.JPG)
 
 
@@ -32,6 +33,7 @@ Other EDA was performed to see if ‘Budget’ is an obvious predictor of either
 
 
 As would probably be expected, a strong correlation between ‘Tomatometer Rating’ and ‘Audience Rating’ can be seen:
+
 ![](images/Tomatometer_Rating_vs_Audience_Rating.JPG)
 
 
