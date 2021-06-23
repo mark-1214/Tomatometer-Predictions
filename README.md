@@ -25,7 +25,9 @@ This research is an attempt to help film studios in deciding which movies to gre
 
  Most of the movies in the final dataset were created recently.  Using more recent data like this should help with identifying up-to-date trends in the data.
 
-![](images/Release_Year.JPG)
+<p align="center">
+  <img src="images/Release_Year.JPG" />
+</p>
 
 
 Other EDA was performed to see if ‘Budget’ is an obvious predictor of either Tomatometer Rating (ratings from the critics or Audience Rating (ratings from average viewers).  However, there appears to not be much correlation:
