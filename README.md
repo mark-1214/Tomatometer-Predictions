@@ -62,12 +62,29 @@ When deciding whether to green-light a project, film studios consider who the le
 </p>
 
 ## Methods
-All methods can be seen in the [Predicting Tomatometer Scores](./Predicting_Tomatometer_Scores.ipynb) notebook
+All methods can be seen in the [Predicting Tomatometer Scores](./Predicting_Tomatometer_Scores.ipynb) notebook.
 
-Using both numerical and categorical columns in the dataset, predict Tomatometer Rating with Random Forest Regressor (RFR) model.
+####Method #1:
+
+Using both numerical and categorical columns in the dataset, predict Tomatometer Rating and Tomatometer Status with Random Forest Regressor (RFR) model.
+
+Mean Absolute Error used for scoring Tomatometer Rating predictions.
+
+Accuracy Score used for scoring Tomatometer Status predictions.
 
 Preprocessing data:
 
-One Hot Encoding applied to the categorical columns used in the model (Rating and Genre), which were selected based off their low cardinality.  MinMaxScaler was applied to the numerical columns (Runtime, Release Month, and Budget).
+One Hot Encoding applied to the categorical columns used in the model (Rating and Genre), which were selected based off their low cardinality.  MinMaxScaler applied to the numerical columns (Runtime, Release Month, and Budget).
+
+Results:
+
+####Method #2:
+
+Using the Description (or plot) column in the dataset, predict Tomatometer Tomatometer Status with different Natural Language Processing techniques.
+
+
+
+
+
 
 
