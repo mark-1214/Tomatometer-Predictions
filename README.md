@@ -116,6 +116,11 @@ All 3 models also had about the same Precision score, which is the ratio of corr
 
 Long Short-Term Memory, which was using Accuracy as a scoring metric, performed similarly to the 3 Vectorized Logistic Regression models, coming in at 47% accurate.  The LSTM model also took considerably more time to run, with 5 epochs and each epoch taking about 4 minutes to run.
 
+## Conclusions
+
+When trying to predict the Tomatometer Rating of a movie, the Random Forest Regressor model proved to be surprisingly successful.  Being able to predict a Tomatometer Score within 21 percentage points (MAE) knowing only the Genre, Rating, Runtime, Release Month and Budget could be helpful information to film studios.
+
+When trying to predict the Tomatometer Status of a movie, all methods attempted had similar results, with accuracy scores ranging from 43% to 47%.
 
 
 
