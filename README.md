@@ -66,7 +66,7 @@ All methods can be seen in the [Predicting Tomatometer Scores](./Predicting_Toma
 
 #### Method #1:
 
-Using both numerical and categorical columns in the dataset, predict Tomatometer Rating and Tomatometer Status with Random Forest Regressor (RFR) model.
+Using both numerical and categorical columns in the dataset, predict Tomatometer Rating (# between 0 and 100) and Tomatometer Status (Certified-Fresh, Fresh, or Rotten) with Random Forest Regressor (RFR) model.
 
 Mean Absolute Error used for scoring Tomatometer Rating predictions.
 
@@ -78,11 +78,43 @@ One Hot Encoding applied to the categorical columns used in the model (Rating an
 
 Results:
 
+Random Forest Regressor model proved to be relatively successful in predicting the Tomatometer Rating, producing a Mean Absolute Error of ~21.  This means that while only being provided with the ‘Genre’, ‘Rating’, ‘Runtime’, ‘Release Month’, and ‘Budget’, a film studio could probably guess within about 21 points what the Tomatometer Rating of a proposed movie would be.
+
+RFR model was able to predict which Tomatometer Status a movie would fall into with a 43% accuracy 
+
+<p align="center">
+  <img src="RFR_Results.JPG" />
+</p>
+
+
 #### Method #2:
 
 Using the Description (or plot) column in the dataset, predict Tomatometer Tomatometer Status with different Natural Language Processing techniques.
 
+Logistic Regression models created using different vectorizer techniques: TF-IDF Vectorizer, Count Vectorizer, and Hashing Vectorizer.
 
+Also a Long Short-Term Memory model was created.
+
+Preprocessing data:
+
+One Hot Encoding applied to Tomatometer Status column.  Also, the only movies included were those with a Description length of greater than 300 words.  This resulted in a [dataset](datasets/movie_dataset_desc.csv) of ~2,300 movies, with most of the movie descriptions being roughly 500 to 1,000 words in length.
+
+Results:
+
+
+Logistic Regression models had similar results for each type of Vectorizer.  TF-IDF Vectorizer scored the highest of the 3 models with a 47% accuracy.  However, the other two Vectorizer models had similar results, with Count Vectorizer scoring 44% and Hashing Vectorizer scoring 46%.
+
+<p align="center">
+  <img src="NLP_Vectorizer_Results.JPG" />
+</p>
+
+All 3 models also had about the same Precision score, which is the ratio of correctly predicted positive observations to the total predicted positive observations.  However, the Recall score, which is the ratio of correctly predicted positive observations to the all observations in actual class, was considerably higher for the TF-IDF Vectorizer compared to the other two.  This caused the F1 Score, which is the weighted average of Precision and Recall, to be highest for TF-IDF.
+
+<p align="center">
+  <img src="NLP_Vectorizer_Results_F1.JPG" />
+</p>
+
+Long Short-Term Memory, which was using Accuracy as a scoring metric, performed similarly to the 3 Vectorized Logistic Regression models, coming in at 47% accurate.  The LSTM model also took considerably more time to run, with 5 epochs and each epoch taking about 4 minutes to run.
 
 
 
