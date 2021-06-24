@@ -83,7 +83,7 @@ Random Forest Regressor model proved to be relatively successful in predicting t
 RFR model was able to predict which Tomatometer Status a movie would fall into with a 43% accuracy 
 
 <p align="center">
-  <img src="RFR_Results.JPG" />
+  <img src="images/RFR_Results.JPG" />
 </p>
 
 
@@ -105,13 +105,13 @@ Results:
 Logistic Regression models had similar results for each type of Vectorizer.  TF-IDF Vectorizer scored the highest of the 3 models with a 47% accuracy.  However, the other two Vectorizer models had similar results, with Count Vectorizer scoring 44% and Hashing Vectorizer scoring 46%.
 
 <p align="center">
-  <img src="NLP_Vectorizer_Results.JPG" />
+  <img src="images/NLP_Vectorizer_Results.JPG" />
 </p>
 
 All 3 models also had about the same Precision score, which is the ratio of correctly predicted positive observations to the total predicted positive observations.  However, the Recall score, which is the ratio of correctly predicted positive observations to the all observations in actual class, was considerably higher for the TF-IDF Vectorizer compared to the other two.  This caused the F1 Score, which is the weighted average of Precision and Recall, to be highest for TF-IDF.
 
 <p align="center">
-  <img src="NLP_Vectorizer_Results_F1.JPG" />
+  <img src="images/NLP_Vectorizer_Results_F1.JPG" />
 </p>
 
 Long Short-Term Memory, which was using Accuracy as a scoring metric, performed similarly to the 3 Vectorized Logistic Regression models, coming in at 47% accurate.  The LSTM model also took considerably more time to run, with 5 epochs and each epoch taking about 4 minutes to run.
