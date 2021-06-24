@@ -62,7 +62,7 @@ When deciding whether to green-light a project, film studios consider who the le
 </p>
 
 ## Methods
-All methods can be seen in the [Predicting Tomatometer Scores] (./Predicting_Tomatometer_Scores.ipynb) notebook
+All methods can be seen in the [Predicting Tomatometer Scores](./Predicting_Tomatometer_Scores.ipynb) notebook
 
 Using both numerical and categorical columns in the dataset, predict Tomatometer Rating with Random Forest Regressor (RFR) model.
 
